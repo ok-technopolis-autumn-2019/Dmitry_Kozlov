@@ -1,0 +1,12 @@
+html{
+    display: flex;
+}
+.todos{
+    width: 562px;
+    display: flex;
+    flex-direction: column;
+}
+.todos__frame{
+    display: flex;
+    flex-direction: column;
+}
