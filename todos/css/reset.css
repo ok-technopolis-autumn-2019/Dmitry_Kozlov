@@ -24,9 +24,6 @@ input[type = "text"]{
     padding-right: 4px;
     background-color: transparent;
 }
-input[type = "text"] ::placeholder{
-    color: rgb(122, 122, 122);
-}
 button {
     border: 0 none;
     font-style: normal;
