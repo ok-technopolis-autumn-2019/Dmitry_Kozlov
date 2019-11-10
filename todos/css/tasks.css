@@ -1,0 +1,101 @@
+.tasks-list{
+    display: flex;
+    flex-direction: column;
+}
+.task-item{
+    display: flex;
+    flex-direction: row;
+}
+.task-item__view{
+    display: flex;
+    width: 562px;
+    height: auto;
+    min-height: 64px;
+    border: 1px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #E6E6E6;
+}
+.task-item__status{
+    width: 40px;
+    height: 39px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+.task-item__delete{
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+    border: none;
+    margin-left: auto;
+    font-size: 0;
+}
+.task-item__view:hover .task-item__delete,
+.task-item__delete:focus {
+    background-image: url(../icons/close.svg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.task-item__text{
+    width: 480px;
+    margin: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #666666;
+    word-break: break-all;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+.todo-input_task:before {
+    margin-left: 4px;
+    content: " ";
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 2px;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-image: url(../icons/checkbox.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    border: solid transparent 1px;
+    border-radius: 50%;
+}
+
+input[type=checkbox]:checked + .todo-input_task:before {
+    width: 36px;
+    height: 36px;
+    background-image: url(../icons/completed.svg);
+    background-position: center;
+    background-color: transparent;
+    border: solid #5dc2af 1px;
+    border-radius: 50%;
+}
+
+input[type=checkbox]:checked + .todo-input_task + .task-item__text {
+  
+    color: #CCCCCC;
+    text-decoration: line-through;
+}
+
+.task-item__status:focus + .todo-input_task:before {
+   
+    border: solid #4a8efc 1px;
+    border-radius: 50%;
+}
+
+
+
+.todo-app__task-item-task-item:hover {
+    background:rgb(253, 253, 253);
+}
