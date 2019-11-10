@@ -34,9 +34,3 @@ button {
     font-family: "Roboto", sans-serif;
     background-color: transparent;
 }
-section{
-    background: #FFFFFF;
-    box-shadow: inset 0px -1px 0px #E6E6E6;
-    min-height: 63px;
-    align-items: center;
-}
