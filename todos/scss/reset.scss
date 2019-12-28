@@ -1,3 +1,5 @@
+@import "_vars.scss";
+
 html, body {
     margin: 0 auto;
     padding: 0;
@@ -5,9 +7,9 @@ html, body {
     font-style: normal;
     font-weight: 350;
     font-size: 14px;
-    color: #888888;
+    color: $color_text;
     line-height: 1.2;
-	background-color: #f2f2f2;
+	background-color: $color_bg;
 }
 h1{
     margin: 0;
@@ -30,7 +32,7 @@ button {
     font-weight: 350;
     font-size: 14px;
     line-height: 1.2;
-    color: #888888;
+    color: $color_button;
     font-family: "Roboto", sans-serif;
     background-color: transparent;
 }

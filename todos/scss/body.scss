@@ -1,0 +1,43 @@
+@import "_vars.scss";
+
+.todos{
+    display: flex;
+    flex-direction: column;
+}
+.todos__frame  section{
+    background: $color_bg;
+    box-shadow: inset 0px -1px 0px $color_shadow;
+    min-height: 63px;
+    align-items: center;
+}
+.todos__frame{
+    position: relative;
+    display: flex;
+    width: 562px;
+    flex-direction: column;
+    margin: 0 auto;
+    background: $color_bg;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    &::before{
+      content: "";
+      position: absolute;
+      background: $color_bg;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      top: 100%;
+      left: 2px;
+      right: 2px;
+      height: 5px;
+      z-index: -1;
+    }
+  &::after{
+    content: "";
+    position: absolute;
+    background: $color_bg;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 4px;
+    right: 4px;
+    height: 10px;
+    z-index: -2;
+  }
+}

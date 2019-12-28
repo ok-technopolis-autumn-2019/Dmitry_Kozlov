@@ -1,3 +1,6 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
 .tasks-list{
     display: flex;
     flex-direction: column;
@@ -13,14 +16,15 @@
     min-height: 64px;
     border: 1px;
     align-items: center;
-    background: #FFFFFF;
-    box-shadow: inset 0px -1px 0px #E6E6E6;
+    background: $color_bg;
+    box-shadow: inset 0px -1px 0px $color_shadow;
 }
+
 .task-item__status{
     width: 40px;
     height: 39px;
-    background: #FFFFFF;
-    border: 1px solid #E6E6E6;
+    background: $color_bg;
+    border: 1px solid $color_border;
     box-sizing: border-box;
 }
 .task-item__delete{
@@ -34,7 +38,7 @@
 .task-item__view:hover .task-item__delete,
 .task-item__delete:focus {
     background-image: url(../icons/close.svg);
-    background-color: #FFFFFF;
+    background-color: $color_bg;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -46,13 +50,12 @@
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    color: #666666;
+    color: $color_text;
     word-break: break-all;
 }
 
 input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
+    @include move9999left();
 }
 .todo-input_task:before {
     margin-left: 4px;
@@ -84,7 +87,7 @@ input[type=checkbox]:checked + .todo-input_task:before {
 
 input[type=checkbox]:checked + .todo-input_task + .task-item__text {
   
-    color: #CCCCCC;
+    color: $color_gray4;
     text-decoration: line-through;
 }
 
@@ -97,5 +100,5 @@ input[type=checkbox]:checked + .todo-input_task + .task-item__text {
 
 
 .todo-app__task-item-task-item:hover {
-    background:rgb(253, 253, 253);
+    background: $color_bg;
 }
