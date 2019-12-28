@@ -1,0 +1,19 @@
+@import "_vars.scss";
+
+.todos__header{
+    display: flex;
+    margin: 0 auto;
+}
+.title{
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+	font-style: italic;
+	color: $color_title;
+	padding: 10px;
+	font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    letter-spacing: -2.5px;
+    width: 562px;
+}

@@ -1,0 +1,35 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.lower-functions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lower-functions__item{
+    margin: 12px;
+}
+.task-filter__input {
+    @include move9999left();
+}
+
+.task-filter__text {
+    padding: 3px;
+    border: 1px transparent solid;
+    &:hover{
+      background-color: white;
+    }
+}
+
+.task-filter__input:checked + .task-filter__text {
+	border: 1px solid $color_border;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.task-completed {
+	border: 0;
+	color: grey;
+	background-color: white;
+	font-size: 13px;
+}
